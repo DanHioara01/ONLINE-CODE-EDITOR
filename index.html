@@ -12,25 +12,27 @@
     </header>
 
     <main>
-<div class="editor-container">
-    <div class="editor">
-        <h2>HTML</h2>
-        <textarea id="htmlCode">&lt;h1&gt;Salut!&lt;/h1&gt;</textarea>
-    </div>
-    <div class="editor">
-        <h2>CSS</h2>
-        <textarea id="cssCode">h1 { color: red; }</textarea>
-    </div>
-    <div class="editor">
-        <h2>JavaScript</h2>
-        <textarea id="jsCode">console.log("Salut din JS!");</textarea>
-    </div>
-</div>
+        <div class="editor-container">
+            <div class="editor">
+                <label for="htmlCode"><h2>HTML</h2></label>
+                <textarea id="htmlCode" aria-label="Editor HTML">&lt;h1&gt;Salut!&lt;/h1&gt;</textarea>
+            </div>
+            <div class="editor">
+                <label for="cssCode"><h2>CSS</h2></label>
+                <textarea id="cssCode" aria-label="Editor CSS">h1 { color: red; }</textarea>
+            </div>
+            <div class="editor">
+                <label for="jsCode"><h2>JavaScript</h2></label>
+                <textarea id="jsCode" aria-label="Editor JavaScript">console.log("Salut din JS!");</textarea>
+            </div>
+        </div>
 
-<button id="saveBtn">Salvează proiectul</button>
+        <button id="saveBtn">Salvează proiectul</button>
 
-<h2>Rezultat</h2>
-<iframe id="output"></iframe>
+        <h2>Rezultat</h2>
+        <iframe id="output" title="Previzualizare rezultat cod"></iframe>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
