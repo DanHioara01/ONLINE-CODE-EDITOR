@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Code Editor</h1>
+    </header>
+
+    <main>
+<div class="editor-container">
+    <div class="editor">
+        <h2>HTML</h2>
+        <textarea id="htmlCode">&lt;h1&gt;Salut!&lt;/h1&gt;</textarea>
+    </div>
+    <div class="editor">
+        <h2>CSS</h2>
+        <textarea id="cssCode">h1 { color: red; }</textarea>
+    </div>
+    <div class="editor">
+        <h2>JavaScript</h2>
+        <textarea id="jsCode">console.log("Salut din JS!");</textarea>
+    </div>
+</div>
+
+<button id="saveBtn">Salvează proiectul</button>
+
+<h2>Rezultat</h2>
+<iframe id="output"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
