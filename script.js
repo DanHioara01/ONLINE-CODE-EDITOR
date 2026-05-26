@@ -16,7 +16,7 @@ htmlCode.addEventListener('input', updateOutput);
 cssCode.addEventListener('input', updateOutput);
 jsCode.addEventListener('input', updateOutput);
 
-// Salvează proiectul
+// Salveaza proiectul
 saveBtn.addEventListener('click', () => {
     const fullHtml = `
 <!DOCTYPE html>
