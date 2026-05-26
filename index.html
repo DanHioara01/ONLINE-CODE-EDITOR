@@ -7,30 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Online Code Editor</h1>
+    <header class="app-header">
+        <div>
+            <h1>Online Code Editor</h1>
+        </div>
+        <button id="saveBtn">Salveaza proiectul</button>
     </header>
 
-    <main>
-        <div class="editor-container">
-            <div class="editor">
-                <label for="htmlCode"><h2>HTML</h2></label>
-                <textarea id="htmlCode" aria-label="Editor HTML">&lt;h1&gt;Salut!&lt;/h1&gt;</textarea>
+    <main class="workspace">
+        <section class="editor-container" aria-label="Editoare de cod">
+            <div class="panel-title">
+                <span>Editor</span>
+                <small>HTML, CSS si JavaScript</small>
             </div>
-            <div class="editor">
-                <label for="cssCode"><h2>CSS</h2></label>
-                <textarea id="cssCode" aria-label="Editor CSS">h1 { color: red; }</textarea>
-            </div>
-            <div class="editor">
-                <label for="jsCode"><h2>JavaScript</h2></label>
-                <textarea id="jsCode" aria-label="Editor JavaScript">console.log("Salut din JS!");</textarea>
-            </div>
-        </div>
 
-        <button id="saveBtn">Salvează proiectul</button>
+            <div class="editor">
+                <h2>HTML</h2>
+                <textarea id="htmlCode" spellcheck="false">&lt;h1&gt;Salut!&lt;/h1&gt;</textarea>
+            </div>
 
-        <h2>Rezultat</h2>
-        <iframe id="output" title="Previzualizare rezultat cod"></iframe>
+            <div class="editor">
+                <h2>CSS</h2>
+                <textarea id="cssCode" spellcheck="false">h1 { color: red; }</textarea>
+            </div>
+
+            <div class="editor">
+                <h2>JavaScript</h2>
+                <textarea id="jsCode" spellcheck="false">console.log("Salut din JS!");</textarea>
+            </div>
+        </section>
+
+        <section class="result-container" aria-label="Rezultat live">
+            <div class="panel-title">
+                <span>Rezultat</span>
+                <small>Preview live</small>
+            </div>
+            <iframe id="output" title="Rezultat cod"></iframe>
+        </section>
     </main>
 
     <script src="script.js"></script>
